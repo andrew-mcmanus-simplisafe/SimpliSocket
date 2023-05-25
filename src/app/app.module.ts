@@ -7,10 +7,13 @@ import { ChatWindowComponent } from './components/chat-window/chat-window.compon
 import { SideBarComponent } from './components/side-bar/side-bar.component';
 import { UserListComponent } from './components/side-bar/user-list/user-list.component';
 import { ConnectionStatsComponent } from './components/side-bar/connection-stats/connection-stats.component';
+import { HumanReadableChatComponent } from './components/chat-window/human-readable-chat/human-readable-chat.component';
+import { RawChatComponent } from './components/chat-window/raw-chat/raw-chat.component';
+import { MessageEntryBlockComponent } from './components/chat-window/message-entry-block/message-entry-block.component';
 
 @NgModule({
   declarations: [
-    
+
   ],
   imports: [
     BrowserModule,
@@ -19,7 +22,10 @@ import { ConnectionStatsComponent } from './components/side-bar/connection-stats
     ChatWindowComponent,
     SideBarComponent,
     UserListComponent,
-    ConnectionStatsComponent
+    ConnectionStatsComponent,
+    HumanReadableChatComponent,
+    RawChatComponent,
+    MessageEntryBlockComponent
   ],
   providers: [],
   bootstrap: [AppComponent]

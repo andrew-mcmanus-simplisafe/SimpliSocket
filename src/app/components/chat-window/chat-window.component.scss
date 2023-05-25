@@ -1,13 +1,46 @@
 .window {
-    height: 100%;
-    width: 100%;
-    background-color: rgb(228, 0, 228);
+    background-color: white;
     display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    margin-right: 10px;
     align-items: center;
+    width: 90%;
 }
 
-.label {
-    font-size: 50px;
-    color: white;
-    text-align: center;
+.dual-chats {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+}
+
+.human {
+    width: 100%;
+    height: 600px;
+    border-color: #27AAE1;
+    border-top-width: 3px;
+    border-bottom-width: 3px;
+    border-right-width: 0px;
+    border-left-width: 0px;
+    border-style: solid;
+}
+
+.raw {
+    width: 100%;
+    border-color: #3F5BBE;
+    border-top-width: 3px;
+    border-bottom-width: 3px;
+    border-right-width: 0px;
+    border-left-width: 0px;
+    border-left-color: gray;
+    border-left-width: 2px;
+    border-left-style: dashed;
+    border-top-style: solid;
+    border-bottom-style: solid;
+}
+
+.message-block {
+    width: 100%;
+    height: 50px;    
 }
