@@ -1,0 +1,28 @@
+.user-list-box {
+    background-color: #DADFEE;
+    border: 2px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin: 5px;
+    align-self: center;
+    align-items: center;
+}
+
+.title {
+    text-align: center;
+}
+
+.team-name-box {
+    align-self: flex-start;
+    margin-top: 0px;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: pink;
+    border-radius: 10px;
+    padding: 0px;
+    padding-left: 10px;
+    margin: 5px;
+    width: 90%;
+}
