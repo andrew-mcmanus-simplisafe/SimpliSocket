@@ -72,7 +72,8 @@
               "browserTarget": "SimpliSocket:build:production"
             },
             "development": {
-              "browserTarget": "SimpliSocket:build:development"
+              "browserTarget": "SimpliSocket:build:development",
+              "proxyConfig": "./proxy.json"
             }
           },
           "defaultConfiguration": "development"

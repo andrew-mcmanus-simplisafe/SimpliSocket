@@ -1,9 +1,7 @@
-<div class="block">
-    <div class="input-field">
-        <p class="input-text">Type something here...</p>
-    </div>
-    <div class="send-button">
+<form class="block" (ngSubmit)="sendMessage()">
+    <textarea id="message" name="message" [(ngModel)]="message" placeholder="Type something here..."></textarea>
+    <button class="send-button" type="submit">
         <p class="send-label">SEND</p>
-    </div>
-</div>
+    </button>
+</form>
 <p>*Note: Maximum message length is the width of the field.</p>

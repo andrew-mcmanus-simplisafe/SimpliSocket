@@ -10,14 +10,15 @@ import { ConnectionStatsComponent } from './components/side-bar/connection-stats
 import { HumanReadableChatComponent } from './components/chat-window/human-readable-chat/human-readable-chat.component';
 import { RawChatComponent } from './components/chat-window/raw-chat/raw-chat.component';
 import { MessageEntryBlockComponent } from './components/chat-window/message-entry-block/message-entry-block.component';
+import { SocketService } from './services/socket.service';
 
 @NgModule({
   declarations: [
 
   ],
   imports: [
-    BrowserModule,
     AppRoutingModule,
+    BrowserModule,
     AppComponent,
     ChatWindowComponent,
     SideBarComponent,
@@ -27,7 +28,7 @@ import { MessageEntryBlockComponent } from './components/chat-window/message-ent
     RawChatComponent,
     MessageEntryBlockComponent
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  providers: [SocketService],
+  bootstrap: []
 })
 export class AppModule { }
