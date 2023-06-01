@@ -10,28 +10,16 @@ import { SocketService } from '../../../services/socket.service';
   standalone: true,
   imports: [FormsModule]
 })
-export class MessageEntryBlockComponent implements OnInit {
+export class MessageEntryBlockComponent {
 
   constructor(private socketService: SocketService) {}
 
   message: string = '';
-  receivedMessages: string[] = [];
 
   sendMessage(): void {
-    console.log('Button clicked to send message...');
     if (this.message) {
       this.socketService.sendMessage(this.message);
       this.message = '';
     }
-    console.log('Received messages')
-    console.log(this.receivedMessages);
   }
-
-  ngOnInit(): void {
-    // this.socketService.receiveMessage().subscribe((data: string) => {
-    //   this.receivedMessages.push(data);
-    // });
-    this.socketService.receiveMessage()
-  }
-
 }

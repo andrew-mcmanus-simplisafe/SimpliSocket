@@ -1,3 +1,17 @@
-<div class="raw-chat">
+<div #rawChat class="raw-chat">
     <h1 class="title">Raw Message</h1>
+    <ul class="list">
+        <li *ngFor="let message of conversationHistory">
+            <div 
+                class="message-row" 
+                [ngStyle]="{ 'background-color': getItemBackgroundColor(message.sender) }"
+                >
+                <img
+                class="icon"
+                [src]=determineIcon(message.sender)
+              />
+              <pre>{{prettify(message.body)}}</pre>
+            </div>
+        </li>
+    </ul>
 </div>

@@ -1,6 +1,19 @@
 <div class="human-chat">
     <h1 class="title">Human Readable</h1>
-    <ul>
-        <li *ngFor="let message of receivedMessages">{{message}}</li>
+    <ul class="list">
+        <li *ngFor="let message of conversationHistory">
+            <div 
+            class="message-row"
+            [ngStyle]="{ 'background-color': getItemBackgroundColor(message.username) }"
+            >
+                <img
+                class="icon"
+                [src]=determineIcon(message.username)
+              />
+                <p class="message">
+                    {{message.body}}
+                </p>
+            </div>
+        </li>
     </ul>
 </div>

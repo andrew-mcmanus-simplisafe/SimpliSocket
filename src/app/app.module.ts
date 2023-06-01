@@ -26,7 +26,7 @@ import { SocketService } from './services/socket.service';
     ConnectionStatsComponent,
     HumanReadableChatComponent,
     RawChatComponent,
-    MessageEntryBlockComponent
+    MessageEntryBlockComponent,
   ],
   providers: [SocketService],
   bootstrap: []
