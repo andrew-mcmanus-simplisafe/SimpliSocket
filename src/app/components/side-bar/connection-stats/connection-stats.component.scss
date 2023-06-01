@@ -14,3 +14,30 @@
     text-align: center;
 }
 
+.team-name-box {
+    display: flex;
+    flex-direction: row;
+    align-self: flex-start;
+    align-self: center;
+    margin-top: 0px;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: pink;
+    border-radius: 10px;
+    padding: 0px;
+    padding-left: 10px;
+    margin: 5px;
+    width: 80%;
+}
+
+.metric-title {
+    font-size: 18;
+    font-weight: 800;
+}
+
+.metric-text {
+    font-size: 18;
+    font-weight: 500;
+    margin-left: 10px;
+}
+

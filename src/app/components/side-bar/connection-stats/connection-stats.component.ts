@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { SocketService } from 'src/app/services/socket.service';
 
 @Component({
   selector: 'app-connection-stats',
@@ -6,11 +7,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./connection-stats.component.scss'],
   standalone: true,
 })
-export class ConnectionStatsComponent implements OnInit {
+export class ConnectionStatsComponent {
 
-  constructor() { }
-
-  ngOnInit(): void {
+  get connectionInfo(): any {
+    this.socketService.getConnectionStats();
+    return this.socketService.connectionInfo;
   }
+
+  constructor(private socketService: SocketService) {}
 
 }
